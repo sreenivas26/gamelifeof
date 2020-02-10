@@ -17,8 +17,8 @@ pipeline {
                 echo '> Deploying the application ...'
                 ansiblePlaybook(
                     vaultCredentialsId: 'AnsibleVault',
-                    inventory: 'cicd/provision/stag/hosts.yml',
-                    playbook: 'cicd/provision/stag/site.yml'
+                    inventory: '~/cicd/provision/stag/hosts.yml',
+                    playbook: '~/cicd/provision/stag/site.yml'
                 )
             }
         }
